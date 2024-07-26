@@ -34,7 +34,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Pintree">
   <meta property="og:description" content="Managing and Exporting your Bookmarks into a Website">
-  <meta property="og:image" content="https://app.pintree.io/assets/og.png">
+  <meta property="og:image" content="/og.png">
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
@@ -42,13 +42,13 @@
   <meta property="twitter:url" content="https://www.pintree.io">
   <meta name="twitter:title" content="Pintree">
   <meta name="twitter:description" content="Managing and Exporting your Bookmarks into a Website">
-  <meta name="twitter:image" content="https://app.pintree.io/assets/og.png">
+  <meta name="twitter:image" content="/og.png">
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-  <link rel="mask-icon" href="assets/favicon/favicon-32x32.png" color="#0b0b0f">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="/favicon/favicon-32x32.png" color="#0b0b0f">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/tailwind.css">
@@ -94,7 +94,7 @@
           <!-- Off-canvas Sidebar content -->
           <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-white dark:pintree-bg-gray-900 px-6 pb-4">
             <div class="flex h-16 shrink-0 items-center">
-              <img class="pl-2 h-8 w-auto" src="assets/logo.svg" alt="Pintree">
+              <img class="pl-2 h-8 w-auto" src="/logo.svg" alt="Pintree">
               <a href="" class="ml-4 font-extrabold text-2xl dark:text-white">Pintree</a>
             </div>
             <div id="sidebar-2" class="flex flex-1 flex-col">
@@ -110,7 +110,7 @@
       <div
         class="flex flex-col border-r border-gray-200 dark:pintree-border-gray-800 bg-white px-4 h-full font-semibold dark:pintree-bg-gray-900">
         <div class="flex p-0 h-16 shrink-0 items-center">
-          <img class="pl-2 h-8 w-auto" src="assets/logo.svg" alt="Pintree">
+          <img class="pl-2 h-8 w-auto" src="/logo.svg" alt="Pintree">
           <a href="" class="ml-4 font-extrabold text-2xl dark:text-white">Pintree</a>
         </div>
         <div class="flex flex-1 flex-col overflow-y-auto no-scrollbar p-1 cursor-pointer">
@@ -129,7 +129,7 @@
         class="items-center justify-between sticky top-0 z-40 flex h-16 shrink-0 gap-x-4 border-b border-gray-200 dark:pintree-border-gray-800 bg-white dark:pintree-bg-gray-900 px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
         <div class="h-full items-center flex flex-1 gap-x-4 self-stretch lg:gap-x-6 justify-between">
           <div class="flex gap-x-4 justify-between">
-            <img class="pl-2 h-8 w-auto lg:hidden" src="assets/logo.svg" alt="Pintree">
+            <img class="pl-2 h-8 w-auto lg:hidden" src="/logo.svg" alt="Pintree">
             <div class="hidden lg:block relative w-72 h-full items-center justify-between">
               <button id="searchButton" class="absolute h-full text-gray-400 rounded">
                 <svg class="pointer-events-none absolute inset-y-0 left-0 h-full w-5 text-gray-400" viewBox="0 0 20 20"
@@ -332,13 +332,13 @@
       card.onclick = () => window.open(url, '_blank'); // Make the whole card clickable
 
       const cardIcon = document.createElement('img');
-      cardIcon.src = icon || 'assets/default-icon.svg'; // Use provided icon or default icon
+      cardIcon.src = icon || '/default-icon.svg'; // Use provided icon or default icon
       cardIcon.alt = title;
       cardIcon.className = 'w-8 h-8 mr-4 rounded-full flex-shrink-0 card-icon-bg'; // Smaller size and rounded
 
       // Check if the image URL returns 404 and replace it with the default icon if it does
       cardIcon.onerror = () => {
-        cardIcon.src = 'assets/default-icon.svg';
+        cardIcon.src = '/default-icon.svg';
       };
 
       const cardContent = document.createElement('div');
